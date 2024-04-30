@@ -1,15 +1,11 @@
 <template>
-  <div class="body">
-    
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h1> &lt;{{ curriculo.name }}/&gt; </h1>
+          <h1 class=""> &lt;{{ curriculo.name }}/&gt; </h1>
         </div>
       </div>
     </div>
-
-  </div>
 </template>
 
 
@@ -23,21 +19,18 @@ export default defineComponent({
 })
 </script>
 
-
-
 <style scoped>
 .container{
   display: flex;
   justify-content: center;
-  margin-bottom: 0px;
 }
 .container h1{
-  overflow: hidden;
-  white-space: nowrap;
-  font-size: 1.6em;
-  letter-spacing: .15em; 
   animation: typing 2s steps(30, end);
-  font-weight: bold;
+  overflow: hidden;
+  white-space: wrap;
+  font-size: 2.5em;
+  margin: 0px auto 2em auto;
+  overflow-wrap: break-word;
 
   font-family: 'ATWriter' ,'Courier New', Courier, monospace;
 }
@@ -46,6 +39,7 @@ export default defineComponent({
 @media(min-width: 640px) {
   .container h1{
   font-size: 2.5em;
+  white-space: nowrap;
   animation: typing 2.5s steps(30, end);
   margin-bottom: 1em;
   margin-top: 0.3em;
@@ -54,7 +48,7 @@ export default defineComponent({
 
 @media(min-width: 968px) {
   .container h1{
-  font-size: 3.5em;
+  font-size: 2.5em;
 }
 }
 
@@ -66,8 +60,9 @@ export default defineComponent({
 
 /* Efeito de escrita */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from { width: 0; max-height: 45px;}
+  95% { max-height: 50px; }
+  to { width: 100%; max-height: 100px;}
 }
 
 </style>

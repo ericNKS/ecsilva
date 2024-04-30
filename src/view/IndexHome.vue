@@ -1,32 +1,26 @@
 <template>
-  <NavBar/>
-  <router-view />
+    <div>
+        <MyNameIs :curriculo="curriculo"/>
+        <CurriculoContato :curriculo="curriculo"/>
+    </div>
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component';
-import { BootstrapVue, IconsPlugin } from 'bootstrap-vue';
+import { defineComponent } from 'vue'
+import MyNameIs from '../components/MyNameIs.vue';
+import CurriculoContato from '../components/CurriculoContato.vue';
 
-// Import Bootstrap and BootstrapVue CSS files (order is important)
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap-vue/dist/bootstrap-vue.css';
-
-
-
-import NavBar from './components/NavBar.vue'
-import MyNameIs from './components/MyNameIs.vue';
-import CurriculoContato from './components/CurriculoContato.vue';
-import IndexHomeVue from './view/IndexHome.vue';
-
-
-@Options({
-  components: {
-    NavBar,
-    MyNameIs,
-    CurriculoContato,
-    IndexHomeVue,
+export default defineComponent({
+    methods: {
+    goToAbout() {
+      this.$router.push('/home')
+    },
   },
-  data(){
+  components: { 
+    MyNameIs,
+    CurriculoContato
+   },
+   data(){
     return{
       curriculo:{
         name: "Éric Silva dos Santos",
@@ -51,16 +45,7 @@ import IndexHomeVue from './view/IndexHome.vue';
     }
   }
 })
-export default class App extends Vue {
-[name: string]: any;
-}
 </script>
-
 <style>
-body{
-  background-color: #272323;
-  color: #aaaaaa;
-  font-family: 'Courier New', Courier, monospace;
-  height: 100vh;
-}
+
 </style>
