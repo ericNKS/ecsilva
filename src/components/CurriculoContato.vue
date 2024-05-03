@@ -56,7 +56,7 @@
                                 <i class="fa fa-envelope-o"></i> <a href="mailto:ek.silva.santos@gmail.com">ek.silva.santos@gmail.com</a>
                             </p>
                             <p>
-                                <i class="fa fa-linkedin-square"></i> <a href="https://www.linkedin.com/in/%C3%A9ric-santos-626679173/" target="_blank">ek.silva.santos@gmail.com</a>
+                                <i class="fa fa-linkedin-square"></i> <a href="https://www.linkedin.com/in/%C3%A9ric-santos-626679173/" target="_blank">Éric Santos</a>
                             </p>
                             <p>
                                 <i class="fa fa-github"></i> <a href="https://github.com/ericNKS" target="_blank">EricNKS</a>

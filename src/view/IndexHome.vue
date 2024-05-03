@@ -23,7 +23,7 @@ export default defineComponent({
    data(){
     return{
       curriculo:{
-        name: "Éric Silva dos Santos",
+        name: "Eric Silva dos Santos",
         aboutMe: "Sou um estudante de Ciência da Computação, entusiasta em tecnologia desde criança, que nessa época não aguentava ver algo que se mexia e já queria abrir para ver tirar a minha duvida de como aquilo funcionava. Amo passar o tempo programando projetos pessoais como esse, amor jogar, assistir bons filmes como Clube da luta e Gênio Indomável, além de assistir animes e principalmente estar com a minha noiva.",
         objetivo: "Tenho como objetivo de vida trazer inovação para o mundo usando a tecnologia como aliada. Gostaria de junto com a programação solucionar problemas reais, que ajudem pessoas reais e melhore a vida dessas pessoas. Pretendo fazer isso de formas criativas e aplicando uma solução de forma rápida porem competente, para que assim a solução seja realmente usual e não somente mais uma aplicação feita que acaba em desuso.",
         experiencias: [
